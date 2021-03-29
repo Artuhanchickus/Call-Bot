@@ -8,7 +8,7 @@ phone_number = "+380500298007"
 print("start")
 while True:
     mins = time.strftime("%M");
-    if int(mins) == 46:
+    if int(mins) == 58:
         print('sending...')
         with Client("Shmaltsell", api_id, api_hash, phone_number = phone_number) as app:
             app.send_message(-306597811,"/drochnut")
